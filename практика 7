@@ -1,0 +1,94 @@
+TASK 1
+#include <iostream>
+#include <fstream>
+using namespace std;
+                       
+int main() {
+    ofstream fout;
+    fout.open("file.txt");
+    fout << "file file file";
+    fout.close();
+    return 0;
+        }
+ TASK 2
+#include <iostream>
+#include <fstream>
+using namespace std;
+                       
+int main() {
+    string B;
+    ifstream fin;
+    fin.open("file.txt");
+    while (fin >> B)
+        {
+            cout << B << endl;
+        }
+
+    fin.close();
+    return 0;
+        }
+TASK 3
+#include <iostream>
+#include <fstream>
+#include <string> 
+using namespace std;
+int main ()
+{
+    ifstream fin;
+    fin.open("file.txt");
+    string str;
+    getline(fin,str);
+    cout << str << endl;
+    fin.close();
+}
+#include <iostream>
+#include <fstream>
+using namespace std;
+ int main ()
+{
+    ifstream fin;
+    fin.open("file.txt");
+    char strstr;
+    while(fin.read((char*)&strstr,sizeof (char)))
+    {
+        cout << strstr;
+    }
+    fin.close();
+}
+TASK 4
+#include <iostream>
+#include <fstream>
+using namespace std;
+ int main()
+{
+    ifstream fin;
+    fin.open("file.txt");
+    char C[100];
+    while (!fin.eof())
+    {
+        fin >> B;
+        cout << B << endl;
+
+    }
+    fin.close();
+ }
+ TASK 5
+ #include <iostream>
+#include <fstream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+int main{
+  fstream fs;
+  fs.open('file.txt',fstream:: in | fstream:: out | fstream:: app  );
+  SetConsoleCP(1215)
+  string msg;
+  cin >> msg;
+  fs << msg <<  "\n";
+  fs.close();
+  
+}
+TASK 6
+
+
+ 
